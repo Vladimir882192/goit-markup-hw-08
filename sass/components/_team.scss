@@ -1,0 +1,29 @@
+.team {
+  display: flex;
+  gap: 30px;
+
+  &__item {
+  box-shadow: $box-shadow-team;
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+  }
+}
+.team__card-thumb {
+  padding: 30px 0px;
+  text-align: center;
+}
+.team__title {
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.team__text {
+  color: $primery-text-color;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}

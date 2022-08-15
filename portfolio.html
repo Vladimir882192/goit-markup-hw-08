@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Хедер -->
+    <header class="page-header">
+      <div class="container page-header__container">
+        <a href="./index.html" class="logo page-header__logo">
+          <span class="logo__accent">Web</span>Studio
+        </a>
+        <!-- Навигация  -->
+        <nav class="navigation container__navigation">
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link"> Студия </a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--current">
+                Портфолио
+              </a>
+            </li>
+            <li class="site-nav__item"><a href="" class="site-nav__link"> Контакты </a></li>
+          </ul>
+        </nav>
+        <!-- Контакты -->
+        <ul class="contacts page-header__contacts">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg class="contacts__icon" height="12" width="16">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380991111111" class="contacts__link">
+              <svg class="contacts__icon" height="16" width="10">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 (099) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Главный раздел -->
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <ul class="filters">
+            <li class="filters__item">
+              <button type="button" class="filters__button filters__button--current">Все</button>
+            </li>
+            <li class="filters__item">
+              <button type="button" class="filters__button">Веб-сайты</button>
+            </li>
+            <li class="filters__item">
+              <button type="button" class="filters__button">Приложения</button>
+            </li>
+            <li class="filters__item">
+              <button type="button" class="filters__button">Дизайн</button>
+            </li>
+            <li class="filters__item">
+              <button type="button" class="filters__button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <ul class="benefits">
+            <li class="benefits__item">
+              <article class="benefits-card benefits__benefits-card">
+                <a href="" class="benefits-card__link">
+                  <div class="benefits-card__img">
+                    <img src="./images/img1.jpg" alt="Веб-сайт" width="370" height="294" />
+
+                    <div class="benefits-card__thumb">
+                      <p class="benefits-card__description">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения
+                        <br />о компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="benefits-card__meta">
+                    <h2 class="benefits-card__title">Технокряк</h2>
+                    <p class="benefits-card__text">Веб-сайт</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li class="benefits__item">
+              <article class="benefits-card benefits__benefits-card">
+                <a href="" class="benefits-card__link">
+                  <div class="benefits-card__img">
+                    <img src="./images/img2.jpg" alt="Постер" width="370" height="294" />
+
+                    <div class="benefits-card__thumb">
+                      <p class="benefits-card__description">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения
+                        <br />о компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="benefits-card__meta">
+                    <h2 class="benefits-card__title">
+                      Постер <span lang="en">New Orlean vs Golden Star</span>
+                    </h2>
+                    <p class="benefits-card__text">Дизайн</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li class="benefits__item">
+              <article class="benefits-card benefits__benefits-card">
+                <a href="" class="benefits-card__link">
+                  <div class="benefits-card__img">
+                    <img src="./images/img3.jpg" alt="Ресторан" width="370" height="294" />
+
+                    <div class="benefits-card__thumb">
+                      <p class="benefits-card__description">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения
+                        <br />о компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="benefits-card__meta">
+                    <h2 class="benefits-card__title">Ресторан <span lang="en">Seafood</span></h2>
+                    <p class="benefits-card__text">Приложение</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li class="benefits__item">
+              <article class="benefits-card benefits__benefits-card">
+                <a href="" class="benefits-card__link">
+                  <div class="benefits-card__img">
+                    <img src="./images/img4.jpg" alt="Проект Прайм" width="370" height="294" />
+
+                    <div class="benefits-card__thumb">
+                      <p class="benefits-card__description">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения
+                        <br />о компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="benefits-card__meta">
+                    <h2 class="benefits-card__title">Проект <span lang="en">Prime</span></h2>
+                    <p class="benefits-card__text">Маркетинг</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li class="benefits__item">
+              <article class="benefits-card benefits__benefits-card">
+                <a href="" class="benefits-card__link">
+                  <div class="benefits-card__img">
+                    <img src="./images/img5.jpg" alt="Проект Боксиз" width="370" height="294" />
+
+                    <div class="benefits-card__thumb">
+                      <p class="benefits-card__description">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения
+                        <br />о компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="benefits-card__meta">
+                    <h2 class="benefits-card__title">Проект <span lang="en">Boxes</span></h2>
+                    <p class="benefits-card__text">Приложение</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li class="benefits__item">
+              <article class="benefits-card benefits__benefits-card">
+                <a href="" class="benefits-card__link">
+                  <div class="benefits-card__img">
+                    <img src="./images/img6.jpg" alt="Вдохновение" width="370" height="294" />
+
+                    <div class="benefits-card__thumb">
+                      <p class="benefits-card__description">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения
+                        <br />о компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="benefits-card__meta">
+                    <h2 class="benefits-card__title" lang="en">Inspiration has no Borders</h2>
+                    <p class="benefits-card__text">Веб-сайт</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li class="benefits__item">
+              <article class="benefits-card benefits__benefits-card">
+                <a href="" class="benefits-card__link">
+                  <div class="benefits-card__img">
+                    <img src="./images/img7.jpg" alt="Издание" width="370" height="294" />
+
+                    <div class="benefits-card__thumb">
+                      <p class="benefits-card__description">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения
+                        <br />о компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="benefits-card__meta">
+                    <h2 class="benefits-card__title">
+                      Издание <span lang="en">Limited Edition</span>
+                    </h2>
+                    <p class="benefits-card__text">Дизайн</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li class="benefits__item">
+              <article class="benefits-card benefits__benefits-card">
+                <a href="" class="benefits-card__link">
+                  <div class="benefits-card__img">
+                    <img src="./images/img8.jpg" alt="Проект Лаб" width="370" height="294" />
+
+                    <div class="benefits-card__thumb">
+                      <p class="benefits-card__description">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения
+                        <br />о компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="benefits-card__meta">
+                    <h2 class="benefits-card__title">Проект <span lang="en">LAB</span></h2>
+                    <p class="benefits-card__text">Маркетинг</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li class="benefits__item">
+              <article class="benefits-card benefits__benefits-card">
+                <a href="" class="benefits-card__link">
+                  <div class="benefits-card__img">
+                    <img src="./images/img9.jpg" alt="Растущий бизнес" width="370" height="294" />
+
+                    <div class="benefits-card__thumb">
+                      <p class="benefits-card__description">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения
+                        <br />о компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="benefits-card__meta">
+                    <h2 class="benefits-card__title" lang="en">Growing Business</h2>
+                    <p class="benefits-card__text">Приложение</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="page-footer">
+      <div class="container page-footer__content">
+        <!-- <div class=""> -->
+        <div class="page-footer__address">
+          <a href="./index.html" class="logo page-footer__logo">
+            <span class="logo__accent">Web</span>Studio
+          </a>
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
+                <a
+                  href="https://goo.gl/maps/oPbWowYrKjm67KPz8"
+                  class="address__link address__link--location"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com </a>
+                <br />
+              </li>
+              <li class="address__item">
+                <a href="tel:+380991111111" class="address__link">+38 (099) 111-11-11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="page-footer__social">
+          <h2 class="footer__title">присоединяйтесь</h2>
+          <ul class="social footer__social">
+            <li class="social__item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="social__link"
+              >
+                <svg class="social__icon" height="20" width="20">
+                  <use href="./images/icons.svg#icon-instagram-2-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg class="social__icon" height="20" width="20">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg class="social__icon" height="20" width="20">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg class="social__icon" height="20" width="20">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="footer-form" autocomplete="off">
+          <label class="footer-form__field">
+            Подпишитесь на рассылку
+            <input class="footer-form__input" type="email" name="mail" placeholder="E-mail" />
+          </label>
+
+          <button class="button-primary button-primary--icon" type="submit">
+            Подписаться
+            <svg class="button-primary__icon" height="24" width="24">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
+        <!-- </div> -->
+      </div>
+    </footer>
+  </body>
+</html>

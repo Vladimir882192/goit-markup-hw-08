@@ -1,0 +1,49 @@
+.button {
+  text-align: center;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
+
+.hero__button,
+.footer-form__button,
+.form-modal__button {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
+  color: $primery-white-color;
+  background-color: $accent-color;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $primery-white-color;
+    background-color: $hero-button-color;
+  }
+}
+
+.footer-form__button--icon {
+  display: flex;
+  align-items: center;
+  letter-spacing: normal;
+  margin-left: 12px;
+}
+
+.footer-form__icon {
+  margin-left: 10px;
+}

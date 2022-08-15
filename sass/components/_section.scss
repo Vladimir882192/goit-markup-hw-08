@@ -1,0 +1,22 @@
+.section {
+  padding: 94px 0px;
+
+  &--other-background {
+    background-color: $button-portfolio-color;
+    padding: 94px 0px;
+  }
+
+  .section--no-top-padding {
+    padding-top: 0;
+  }
+}
+/* стили и отступы заголовоков H */
+.section__title {
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
