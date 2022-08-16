@@ -3,3 +3,12 @@ body {
   color: $primery-text-color;
   font-family: Roboto, sans-serif;
 }
+body.modal-open {
+  overflow: hidden;
+}
+
+body.menu-open {
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
+}

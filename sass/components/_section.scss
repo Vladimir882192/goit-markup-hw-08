@@ -1,15 +1,39 @@
 .section {
-  padding: 94px 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &--other-background {
     background-color: $button-portfolio-color;
     padding: 94px 0px;
   }
 
-  .section--no-top-padding {
+  &--padding-bot {
+    padding-bottom: 0;
+  }
+
+  &--no-margin-top {
+    margin-top: 0;
+  }
+
+  &--no-margin-bot {
+    margin-bottom: 0;
+  }
+  &--no-top-padding {
     padding-top: 0;
   }
 }
+
 /* стили и отступы заголовоков H */
 .section__title {
   color: $title-text-color;
@@ -18,5 +42,13 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 1190px) {
+    font-size: 28px;
+  }
 }
