@@ -1,78 +1,80 @@
 .benefits {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .benefits__item {
-  flex-basis: calc((100% - 60px) / 3);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
-.benefits-card__link {
-  display: block;
-  text-decoration: none;
+
+.benefits__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     box-shadow: $box-shadow-benefits;
   }
-
-  /* hover overlok всей карточки */
-  &:hover .benefits-card__img::before,
-  &:focus .benefits-card__img::before {
-    transform: translateY(0);
-  }
-
-  &:hover .benefits-card__thumb,
-  &:focus .benefits-card__thumb {
-    transform: translateY(0);
-  }
 }
 /* эффект overlok */
 
 /* скрывать лишнее */
-.benefits-card__img {
+.benefits__img {
   position: relative;
   overflow: hidden;
 }
 
-/* эффекты выезжания окна */
-.benefits-card__img::before {
-  display: inline-block;
-  content: '';
+.benefits__thumb {
+  display: flex;
+  align-items: center;
   position: absolute;
-  top: 0;
   left: 0;
+  bottom: 0;
+
   width: 100%;
   height: 100%;
-  opacity: 1;
-  background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  padding: 24px;
+  opacity: 0;
 
-.benefits-card__thumb {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  padding: 63px 24px;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.benefits-card__description {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
-  letter-spacing: 0.03em;
   color: $primery-white-color;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translatey(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .benefits__link:hover &,
+  .benefits__link:focus & {
+    transform: translatey(0);
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 12px;
+  }
 }
 
 /* рамки и отступы внутри них */
 
-.benefits-card__meta {
+.benefits__meta {
+  flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid #ececec;
   border-left: 1px solid #ececec;
@@ -81,20 +83,28 @@
 
 /* загаловки в списках */
 
-.benefits-card__title {
+.benefits__title {
   color: $title-text-color;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  text-align: left;
+
+  @media screen and (max-width: 400px) {
+    font-size: 16px;
+  }
 }
 
 /* абзацы в списках*/
 
-.benefits-card__text {
+.benefits__text {
   color: $primery-text-color;
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0.03em;
   margin-top: 4px;
+
+  @media screen and (max-width: 400px) {
+    font-size: 15px;
+  }
 }
