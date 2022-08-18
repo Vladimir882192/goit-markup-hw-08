@@ -68,7 +68,6 @@ body.modal-open {
 }
 .section--other-background {
   background-color: #F5F4FA;
-  padding: 94px 0px;
 }
 .section--padding-bot {
   padding-bottom: 0;
@@ -105,7 +104,7 @@ body.modal-open {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -1059,6 +1058,7 @@ body.modal-open {
 .features__item {
   min-width: auto;
 }
+
 @media screen and (max-width: 767px) {
   .features__item:not(:last-child) {
     margin-bottom: 30px;
@@ -1074,7 +1074,6 @@ body.modal-open {
     width: 270px;
   }
 }
-
 .features__icon-div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1190,6 +1189,7 @@ body.modal-open {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
 @media screen and (max-width: 767px) {
   .team__item:not(:last-child) {
     margin-bottom: 30px;
@@ -1200,7 +1200,6 @@ body.modal-open {
     width: calc((100% - 30px) / 2);
   }
 }
-
 .team__card-thumb {
   padding: 30px 0px;
   text-align: center;
@@ -1249,7 +1248,6 @@ body.modal-open {
         flex-wrap: nowrap;
   }
 }
-
 .customers__link {
   display: -webkit-box;
   display: -ms-flexbox;

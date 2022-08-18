@@ -9,22 +9,26 @@
 }
 
 .features__item {
-  min-width: auto;
+  min-width: auto;}
 
-  &:not(:last-child) {
+  
     @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
+      .features__item:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  
+
+  @media screen and (min-width: 768px) {
+    .features__item {
+      width: calc((100% - 30px) / 2);
     }
   }
 
-  @media screen and (min-width: 768px) {
-    width: calc((100% - 30px) / 2);
+  @media screen and (min-width: 1200px) {
+    .features__item{ width: 270px;}
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-  }
-}
 
 .features__icon-div {
   display: flex;
