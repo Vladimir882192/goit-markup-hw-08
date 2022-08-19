@@ -32,9 +32,7 @@
                 <a href="./index.html" class="site-nav__link"> Студия </a>
               </li>
               <li class="site-nav__item">
-                <a href="./portfolio.html" class="site-nav__link site-nav__link--current">
-                  Портфолио
-                </a>
+                <a href="./portfolio.html" class="site-nav__link site-nav__link--current"> Портфолио </a>
               </li>
               <li class="site-nav__item"><a href="" class="site-nav__link"> Контакты </a></li>
             </ul>
@@ -42,7 +40,7 @@
           <!-- Контакты -->
           <ul class="contacts menu__contacts">
             <li class="contacts__item">
-              <a href="mailto:info@devstudio.com" class="contacts__link">
+              <a href="mailto:info@devstudio.com" class="contacts__link--text">
                 <svg class="contacts__icon" height="12" width="16">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
@@ -161,27 +159,24 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/portfolio/poster-new-orlean-vs-golden-star@1x-phone-min.jpg 450w,
-                        ./images/portfolio/poster-new-orlean-vs-golden-star@2x-phone-min.jpg 900w
-                      "
-                      media="(max-width: 767px)"
-                      sizes="(min-width: 480px) 450px 100vw"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/poster-new-orlean-vs-golden-star@1x-tablet-min.jpg 354w,
-                        ./images/portfolio/poster-new-orlean-vs-golden-star@2x-tablet-min.jpg 708w
-                      "
-                      media="(max-width: 1199px)"
-                      sizes="(min-width:768px) 354px, 100vw"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/poster-new-orlean-vs-golden-star@1x-desktop-min.jpg 370w,
-                        ./images/portfolio/poster-new-orlean-vs-golden-star@2x-desktop-min.jpg 740w
+                        ./images/portfolio/poster-new-orlean-vs-golden-star@1x-desktop-min.jpg 1x,
+                        ./images/portfolio/poster-new-orlean-vs-golden-star@2x-desktop-min.jpg 2x
                       "
                       media="(min-width: 1200px)"
-                      sizes="(min-width: 1200px) 370px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-new-orlean-vs-golden-star@1x-tablet-min.jpg 1x,
+                        ./images/portfolio/poster-new-orlean-vs-golden-star@2x-tablet-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-new-orlean-vs-golden-star@1x-phone-min.jpg 1x,
+                        ./images/portfolio/poster-new-orlean-vs-golden-star@2x-phone-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
                     />
                     <img
                       src="./images/portfolio/poster-new-orlean-vs-golden-star.jpg"
@@ -212,8 +207,10 @@
                 <div class="benefits__img">
                   <picture>
                     <source
-                      srcset="./images/portfolio/restoran-seafood @1x-desktop-min.jpg 1x,
-                    ./images/portfolio/restoran-seafood@2x-desktop-min.jpg 2x"
+                      srcset="
+                        ./images/portfolio/restoran-seafood@1x-desktop-min.jpg 1x,
+                        ./images/portfolio/restoran-seafood@2x-desktop-min.jpg 2x
+                      "
                       media="(min-width: 1200px)"
                     />
                     <source
@@ -607,5 +604,6 @@
         <!-- </div> -->
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
